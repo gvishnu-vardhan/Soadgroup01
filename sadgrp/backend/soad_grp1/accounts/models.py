@@ -41,6 +41,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     updated_at = models.DateTimeField(auto_now=True)
     person = models.IntegerField(default = 0)
     #slugname=models.ForeignKey(User,on_delete=models.SET_NULL,null=True)
+
+    def __str__(self):
+        return self.name
     
 
    

@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'accounts',
-    'corsheaders'
+    'corsheaders',
+    'roommates',
 ]
 
 MIDDLEWARE = [
@@ -89,9 +90,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'soad_group01',
         'HOST': 'localhost',
-        
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': 'password',
     }
 }
 
